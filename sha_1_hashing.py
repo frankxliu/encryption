@@ -2,7 +2,24 @@ import hashlib
 import struct
 import sys
 
-# https://cis.temple.edu/~ingargio/cis307/readings/sha1.html
+"""
+This was created by following SHA1 steps provided here: https://cis.temple.edu/~ingargio/cis307/readings/sha1.html
+
+=== What is SHA1? ===
+A cryptographic hash function that producesa 160-bit hash value, represented as a 40-char hexidecimal
+number. It is mainly used in securing digital signatures, certificates and representing integrity of
+data.
+
+=== Strengths ===
+SHA1 is computationally fast, and is not process intensive. This makes the algorithm suitable
+for old legacy systems. However, on a relative and realistic scope, computation power in 
+more modern algorithms are negligent based on Moore's Law. SHA1 is also widely supported
+across many platforms and systems.
+
+=== Weaknesses ===
+SHA1 is vulnerable to collision attacks, where two different inputs result in the same hash value.
+Thus, SHA1 hashing algorithm is deprecated and is not recommended in securing applications.
+"""
 
 # TODO: make this into a class, and clean up the code
 
